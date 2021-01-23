@@ -33,17 +33,19 @@
             <p class="card-text">  <h1 class="my-5 text-center">Welcome to Super Secure Corp.</h1>
                 <h3 class="text-center mb-5">Please log in</h3>
                 <h4 class="text-center mb-5">New to our site? <a href="register.html" class="text-danger">Click Here</a> to register.</h4>
-                <form>
+                <form method="post" id="loginForm">
                     <div class="mb-3">
                     <label for="logInEmail" class="form-label">Email address</label>
                     <input type="email" class="form-control" id="logInEmail" aria-describedby="emailHelp" placeholder="example@email.com">
+                    <p id="errorEmail" class="error"></p>
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                     </div>
                     <div class="mb-3">
                     <label for="logInPassword" class="form-label">Password</label>
                     <input type="password" class="form-control" id="logInPassword">
+                    <p id="errorPassword" class="error"></p>
                     </div>
-                    <button type="submit" class="btn btn-primary">Log In!</button>
+                    <button type="button" class="btn btn-primary" id="loginBtn">Log In!</button>
                 </form></p>
             </div>
         </div>
