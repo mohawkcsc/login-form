@@ -49,29 +49,29 @@
           </h4>
           <form method="post" id="signupForm">
             <div class="mb-3">
-              <label for="registerName" class="form-label">Full Name</label>
+              <label for="name" class="form-label">Full Name</label>
               <input
                 type="text"
                 class="form-control"
-                id="registerName"
+                id="name"
                 placeholder="John Smith"
               />
             </div>
             <div class="mb-3">
-              <label for="registerPhone" class="form-label">Phone Number</label>
+              <label for="phone" class="form-label">Phone Number</label>
               <input
                 type="tel"
                 class="form-control"
-                id="registerPhone"
+                id="phone"
                 placeholder="905-555-1234"
               />
             </div>
             <div class="mb-3">
-              <label for="logInEmail" class="form-label">Email address</label>
+              <label for="email" class="form-label">Email address</label>
               <input
                 type="email"
                 class="form-control"
-                id="logInEmail"
+                id="email"
                 aria-describedby="emailHelp"
                 placeholder="johnsmith@gmail.com"
               />
@@ -80,12 +80,8 @@
               </div>
             </div>
             <div class="mb-3">
-              <label for="registerPassword" class="form-label">Password</label>
-              <input
-                type="password"
-                class="form-control"
-                id="registerPassword"
-              />
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" />
             </div>
             <!-- <div class="mb-3">
               <label for="registerPasswordConfirm" class="form-label"
@@ -97,7 +93,7 @@
                 id="registerPasswordConfirm"
               />
             </div> -->
-            <button type="submit" class="btn btn-primary">
+            <button type="button" id="signupBtn" class="btn btn-primary">
               Create Account!
             </button>
           </form>
@@ -105,7 +101,10 @@
       </div>
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./signup.js"></script>
   </body>
 </html>
 

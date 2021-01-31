@@ -1,0 +1,80 @@
+#formHeader {
+  padding: 5px;
+  background-color: #343a40;
+}
+
+#login {
+  margin: 20% auto;
+  background: #283959;
+}
+#blueColor {
+  background-color: #283959;
+}
+.hidden {
+  display: none;
+}
+#login {
+  min-width: 300px;
+}
+
+.container {
+  width: 80%;
+  min-width: 380px;
+  margin: 0 auto;
+  align-content: center;
+  overflow: auto;
+  justify-content: center;
+  height: 100%;
+}
+
+.tab {
+  background-color: #283959;
+  border: 1px solid white;
+  width: 45%;
+}
+
+.form-control {
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.error {
+  color: lightcoral;
+  text-align: left;
+  margin: 0;
+  font-size: small;
+}
+
+#myCollection {
+  margin: 5px auto;
+  padding: 0 5%;
+  border-bottom: 1px solid aliceblue;
+}
+
+[type="button"] {
+  background-color: #283959;
+  color: aliceblue;
+  border: 1px solid aliceblue;
+  margin-top: 5px;
+}
+
+[type="button"]:hover {
+  background-color: aliceblue;
+  color: #292b2c;
+  border-color: #292b2c;
+}
+.navbar {
+  border-bottom: 1px solid aliceblue;
+  padding-bottom: 0;
+}
+
+.manageContainer {
+  margin-top: 5px;
+  padding: 0 5%;
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+}
