@@ -14,13 +14,14 @@ $success= FALSE;
     $command = "SELECT email, password, name, phone FROM user WHERE email = ?";
     $stmt = $dbh->prepare($command);
     $params = [$email]; 
+    $stmt->execute($params);
     $count = $stmt->rowCount();
     $row = $stmt->fetch();
 
 if ($count === 1) {
 
     if($password == $row["password"]){ //password passed is compared with the hased password stored
-        // $_SESSION["password"] = $row["password"];
+        $_SESSION["password"] = $row["password"];
         $_SESSION["name"] = $row["name"];
         $_SESSION["email"] = $row["email"];
         $_SESSION["phone"] = $row["phone"];
