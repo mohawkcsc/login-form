@@ -14,7 +14,7 @@ $(document).ready(function () {
       success: function (response) {
         // RegisterLogInCheck(response);
         console.log(JSON.parse(response));
-        window.location.href = "index.php";
+        window.location.href = " .php";
       },
       dataType: "text",
     });

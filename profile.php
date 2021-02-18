@@ -25,7 +25,7 @@ if (!isset($_SESSION["name"])) {
             <div class = "row">
                 <div class = "col-sm-4 mx-auto"><a class = "navbar-brand" href = "./index.php">Super Secure Corp.</a></div>
                 <!-- <div class = "col-sm-4 mx-auto"><a class = "navbar-brand" href = "#">Placeholder</a></div> -->
-                <div class = "col-sm-4"><a class = "navbar-brand" href = "#">Logout</a></div>
+                <div class = "col-sm-4 " id="logoutBtn"><a class = "navbar-brand" href = "#">Logout</a></div>
             </div>
 
             <!-- PAGE CONTENT -->
@@ -34,18 +34,18 @@ if (!isset($_SESSION["name"])) {
                 <div class = "col-sm-12 mx-auto"><a href = "#"><img src = "profilepic.jpg" class = "img-rounded-circle mx-auto" alt = "Your profile picture" width = "250" height = "250"></a></div>
             </div>
             <div class = "row">
-                <div class = "col-sm-4">Name: </div>
-                <div class = "col-sm-6"><?php echo $_SESSION["name"]?></div>
+                <div class = "col-sm-4"><h5> Name: </h5></div>
+                <div class = "col-sm-6"><h5><?php echo $_SESSION["name"]?></h5></div>
                 <!-- <div class = "col-sm-2"><a href = "/."><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <div class = "row">
-                <div class = "col-sm-4">Phone: </div>
-                <div class = "col-sm-6"><?php echo $_SESSION["phone"]?></div>
+                <div class = "col-sm-4"><h5>Phone:</h5> </div>
+                <div class = "col-sm-6"><h5><?php echo $_SESSION["phone"]?></h5></div>
                 <!-- <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <div class = "row">
-                <div class = "col-sm-4">Email: </div>
-                <div class = "col-sm-6"><?php echo $_SESSION["email"]?></div>
+                <div class = "col-sm-4"><h5>Email: </h5></div>
+                <div class = "col-sm-6"><h5><?php echo $_SESSION["email"]?></h5></div>
                 <!-- <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <!-- <div class = "row .well-lg">
@@ -53,5 +53,9 @@ if (!isset($_SESSION["name"])) {
                 <div class = "col-sm-2">Change Password  <a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div>
             </div> -->
         </div>
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./profile.js"></script>
     </body>
 </html>
