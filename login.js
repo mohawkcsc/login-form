@@ -31,15 +31,16 @@ $(document).ready(function () {
       },
 
       success: function (response) {
+        console.log(response);
         let json = JSON.parse(response);
         let success = json.success;
         if (success === true) {
-          console.log("win");
+          console.log("win!");
+          // window.location.href = "profile.php";
         } else {
           $("#incPass").text("Incorrect email and password combo");
         }
       },
-      dataType: "text",
     });
   });
 });

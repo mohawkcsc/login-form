@@ -1,3 +1,12 @@
+
+<?php
+session_start();
+//if username is defined, it sends user to myCollection.php
+if (isset($_SESSION["name"])) {
+    header("Location:profile.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,11 +26,11 @@
                     <a class="navbar-brand" href="#">Super Secure Corp.</a>
                     <ul class="nav justify-content-end">
                         <li class="nav-item active">
-                            <a class="nav-link navbar-brand" href="index.html">Log In
+                            <a class="nav-link navbar-brand" href="index.php">Log In
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link navbar-brand" href="register.html">Register
+                            <a class="nav-link navbar-brand" href="register.php">Register
                             </a>
                         </li>
                     </ul>
@@ -57,7 +66,7 @@
     <script src="https://unpkg.com/@popperjs/core@2"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="login.js"></script>
-    
+    b4
 </body>
 </html>
 

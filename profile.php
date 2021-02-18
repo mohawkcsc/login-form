@@ -1,3 +1,13 @@
+<?php
+session_start();
+print_r($_SESSION);
+// if (!isset($_SESSION["name"])) {
+//   header("location: NotFound.php");
+//   exit;
+// }
+?>
+
+
 <!DOCTYPE html>
 <html lang = en-us>
     <head>
@@ -13,8 +23,8 @@
         <div class = "container mb-5 mx-auto">
             <!-- NAVBAR -->
             <div class = "row">
-                <div class = "col-sm-4 mx-auto"><a class = "navbar-brand" href = "./index.html">Super Secure Corp.</a></div>
-                <div class = "col-sm-4 mx-auto"><a class = "navbar-brand" href = "#">Placeholder</a></div>
+                <div class = "col-sm-4 mx-auto"><a class = "navbar-brand" href = "./index.php">Super Secure Corp.</a></div>
+                <!-- <div class = "col-sm-4 mx-auto"><a class = "navbar-brand" href = "#">Placeholder</a></div> -->
                 <div class = "col-sm-4"><a class = "navbar-brand" href = "#">Logout</a></div>
             </div>
 
@@ -25,23 +35,23 @@
             </div>
             <div class = "row">
                 <div class = "col-sm-4">Name: </div>
-                <div class = "col-sm-6">John Benjamin</div>
-                <div class = "col-sm-2"><a href = "/."><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div>
+                <div class = "col-sm-6"><?php $_SESSION["name"]?></div>
+                <!-- <div class = "col-sm-2"><a href = "/."><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <div class = "row">
                 <div class = "col-sm-4">Phone: </div>
-                <div class = "col-sm-6">514.555.6969</div>
-                <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div>
+                <div class = "col-sm-6"><?php $_SESSION["phone"]?></div>
+                <!-- <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <div class = "row">
                 <div class = "col-sm-4">Email: </div>
-                <div class = "col-sm-6">john.benjamin@mohawkcollege.ca</div>
-                <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div>
+                <div class = "col-sm-6"><?php $_SESSION["email"]?></div>
+                <!-- <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
-            <div class = "row .well-lg">
+            <!-- <div class = "row .well-lg">
                 <div class = "col-sm-10"></div>
                 <div class = "col-sm-2">Change Password  <a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div>
-            </div>
+            </div> -->
         </div>
     </body>
 </html>

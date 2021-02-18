@@ -1,5 +1,4 @@
 <?php
-session_start();
 /**
  * used to sign up users and add them to the database
  */

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -26,10 +27,10 @@
             <a class="navbar-brand" href="#">Super Secure Corp.</a>
             <ul class="nav justify-content-end">
               <li class="nav-item">
-                <a class="nav-link navbar-brand" href="index.html">Log In </a>
+                <a class="nav-link navbar-brand" href="index.php">Log In </a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link navbar-brand" href="register.html"
+                <a class="nav-link navbar-brand" href="register.php"
                   >Register
                 </a>
               </li>
