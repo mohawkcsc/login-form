@@ -1,6 +1,6 @@
 <?php
 session_start();
-print_r($_SESSION);
+// print_r($_SESSION);
 if (!isset($_SESSION["name"])) {
   header("location: NotFound.php");
   exit;
@@ -35,17 +35,17 @@ if (!isset($_SESSION["name"])) {
             </div>
             <div class = "row">
                 <div class = "col-sm-4">Name: </div>
-                <div class = "col-sm-6"><?php $_SESSION["name"]?></div>
+                <div class = "col-sm-6"><?php echo $_SESSION["name"]?></div>
                 <!-- <div class = "col-sm-2"><a href = "/."><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <div class = "row">
                 <div class = "col-sm-4">Phone: </div>
-                <div class = "col-sm-6"><?php $_SESSION["phone"]?></div>
+                <div class = "col-sm-6"><?php echo $_SESSION["phone"]?></div>
                 <!-- <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <div class = "row">
                 <div class = "col-sm-4">Email: </div>
-                <div class = "col-sm-6"><?php $_SESSION["email"]?></div>
+                <div class = "col-sm-6"><?php echo $_SESSION["email"]?></div>
                 <!-- <div class = "col-sm-2"><a href = "#"><img src = "./edit.png" title = "Edit" alt = "pencil edit icon" height = "25" width = "25"></a></div> -->
             </div>
             <!-- <div class = "row .well-lg">
