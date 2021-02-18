@@ -1,10 +1,10 @@
 <?php
 session_start();
 print_r($_SESSION);
-// if (!isset($_SESSION["name"])) {
-//   header("location: NotFound.php");
-//   exit;
-// }
+if (!isset($_SESSION["name"])) {
+  header("location: NotFound.php");
+  exit;
+}
 ?>
 
 
